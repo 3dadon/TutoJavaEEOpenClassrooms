@@ -1,4 +1,4 @@
-package com.dadon.servlets;
+package com.dadon.beans;
 
 public class Coyote {
 
