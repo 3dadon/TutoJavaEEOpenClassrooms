@@ -41,6 +41,7 @@
 						for (com.dadon.beans.Produit prod : catProduit.getProduits()) {
 							out.println("<li>");
 							out.println(prod.getName());
+							out.println("</li>");
 						}
 					%>
 				</ul>

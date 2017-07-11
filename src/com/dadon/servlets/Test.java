@@ -43,10 +43,13 @@ public class Test extends HttpServlet {
 		fraise.setName("fraise");
 		Produit orange = new Produit();
 		orange.setName("orange");
+		Produit pomme = new Produit();
+		pomme.setName("pomme");
 		
 		List<Produit> produits = new ArrayList<Produit>();
 		produits.add(fraise);
 		produits.add(orange);
+		produits.add(pomme);
 		
 		categorieProduit.setProduits(produits);
 		request.setAttribute( "categorieProduit", categorieProduit);
