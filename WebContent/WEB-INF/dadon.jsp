@@ -7,6 +7,7 @@
         <meta charset="utf-8" />
         <title>Test</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/myCss.css" />
+        
     </head>
     <body>
        	<strong><p style="color:blue;">Liste des produits à acheter : </p></strong>
