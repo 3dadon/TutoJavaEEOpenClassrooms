@@ -21,6 +21,7 @@ public class Test extends HttpServlet {
 		
 		/* Création et initialisation du message. */
 		String paramAuteur = request.getParameter( "auteur" );
+		String paramTest = request.getParameter("test");
 		String message = "Transmission de variables : OK ! " + paramAuteur;
 		
 		/* Création du bean */
@@ -31,7 +32,7 @@ public class Test extends HttpServlet {
 		premierBean.setPrenom( "Wile E." );
 			
 		/* Stockage du message et du bean dans l'objet request */
-		request.setAttribute( "test", message );
+		request.setAttribute( "test", paramTest );
 		request.setAttribute( "coyote", premierBean );
 		
 		
@@ -53,6 +54,7 @@ public class Test extends HttpServlet {
 		
 		categorieProduit.setProduits(produits);
 		request.setAttribute( "categorieProduit", categorieProduit);
+		request.setAttribute( "fruits", categorieProduit.getProduits());
 		
 		
 		
